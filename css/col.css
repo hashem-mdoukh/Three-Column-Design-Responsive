@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    width: fit-content;
+    margin: 13px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.container .box {
+    padding: 40px 50px;
+}
+
+.container .box.One {
+    background-color: rgb(227, 136, 38);
+}
+
+.container .box.Two {
+    background-color: rgb(0, 105, 112);
+}
+
+.container .box.Three {
+    background-color: rgb(0, 66, 65);
+}
+
+.container .box h1 {
+    color: rgb(242, 242, 242);
+    margin: 25px 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+.container p {
+    color: rgba(255, 255, 255, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.7;
+    margin: 15px 0px 70px;
+}
+
+.container .btn {
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 0;
+    outline: 0;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform .3s, border-radius .2s .4s;
+}
+.container .btn.one {
+    color: rgb(227, 136, 38);
+}
+
+.container .btn.two {
+    color: rgb(0, 105, 112);
+}
+
+.container .btn.three {
+    color: rgb(0, 66, 65);
+}
+
+
+.container .btn:hover {
+    transform: scale(1.1);
+    border-radius: 5px;
+}
